@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek-R1:7B ChatBot</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>DeepSeek-R1:7B ChatBot</h1>
+        </div>
+        <div class="chat-area" id="chatArea">
+            <div class="message bot-message">Hello! How can I help you today?</div>
+        </div>
+        <div class="loading-indicator" id="loadingIndicator">Generating response...</div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your message here...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
