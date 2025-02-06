@@ -31,7 +31,14 @@ async function sendMessage() {
         if (!response.ok) {
             const errorText = await response.text();
             console.error('Error response:', errorText);
-            throw new Error(`HTTP error! status: ${response.status}, message: ${errorText}`);
+            let errorMessage = 'An error occurred';
+            try {
+                const errorData = JSON.parse(errorText);
+                errorMessage = errorData.error || errorMessage;
+            } catch (e) {
+                errorMessage = errorText;
+            }
+            throw new Error(errorMessage); 
         }
         
         const data = await response.json();
@@ -45,7 +52,7 @@ async function sendMessage() {
         
     } catch (error) {
         console.error('Error in sendMessage:', error);
-        displayBotMessage('Sorry, I encountered an error. Please try again.');
+        displayBotMessage(`Sorry, I encountered the following error: ${error.message}`);
     } finally {
         loading = false;
         loadingIndicator.style.display = 'none';
