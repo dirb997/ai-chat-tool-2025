@@ -13,7 +13,6 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3000;
 const API_KEY = process.env.API_KEY;
-// Set when we are able to use the DeepSeek API
 const API_ENDPOINT = 'https://api.deepseek.com/v1/chat/completions'; 
 
 // Serve static files from the 'src' folder for JS and CSS
