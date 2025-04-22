@@ -1,5 +1,8 @@
 ## ChatBot with GUI created to be used with DeepSeek AI API
 
-* As of February 2, 2025, we have not been able to obtain an API key from DeepSeek. While the logic and functionality of the chatbot are in place, its main purpose—chatting—cannot be tested at this time.
+* As of April 22d, 2025, we are now able to obtain an API key from DeepSeek. 
+The logic and functionality of the chatbot are in place, so is its main purpose—chatting, which now we can be tested.
 
-* Update (February 6, 2025): Due to certain constraints, the API services are currently interrupted. We will provide an update as soon as the service is restored. We apologize for any inconvenience this may cause.
+Please enjoy the experience and, if possible, leave your feedback.
+
+Thank you!
